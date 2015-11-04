@@ -1,47 +1,119 @@
 <!DOCTYPE html>
-
-<!-- define angular app -->
-<html ng-app="scotchApp">
+<html lang="en">
 
 <head>
-  <!-- SCROLLS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <!-- SPELLS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-  <script data-main="app.js" src="js/require.js"></script>
-  <script src="js/methods.js"></script>
-  <script src="app.js"></script>
+  <title>Raport generator</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/nivo-lightbox.css" rel="stylesheet" />
+  <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Squad theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+
 </head>
 
-<!-- define angular controller -->
-<body ng-controller="mainController">
+<body>
 
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">MUSE raport generator</a>
+
+<div class="wrapper">
+  <div class="container-fluid">
+    <div class="row first-cont">
+      <div class="col-md-2">
+        <div class="logo">
+          <a href="http://yourmuse.io"><img src="https://yourmuse.io/bundles/musewebapplanding/assets/images/muse_logo.png" width="270px" height="90px"></a>
+        </div>
+        <div class="list-group left-side-menu">
+          <a href="/app/pages/view1.html" class="list-group-item">Blog article</a>
+          <a href="/app/index.html" class="list-group-item">Blog article</a>
+          <a href="#" class="list-group-item">Blog article</a>
+        </div>
+
+      </div>
+      <div class="col-md-5" style="padding-top: 80px">
+        <div><h2>Sprawdź swoją aktywność na YouTube i porównaj swój kanał do konkurencji</h2></div>
+        <br>
+        <ul>
+          <li>21 branża</li>
+          <li>Pełna analityka kanałów</li>
+          <li>Intuicyjne wykresy</li>
+          <li>Wybór okresu danych</li>
+          <li>Wiedza o sytuacji na rynku</li>
+        </ul>
+        <br>
+        <button class="btn btn-warning">Wybierz branżę</button>
+      </div>
+      <div class="col-md-5" style="padding-top: 80px">
+        <div><h2>Szukasz najlepsze filmiki w dowolnym temacie na YouTube dla badania, oferty, prezentacji? Trudno znaleźć jakościowy materiał szybko i wygodnie?</h2></div>
+        <br>
+        <ul>
+          <li>500+ tematów do wyboru</li>
+          <li>Średnio x-number filmików w każdym temacie</li>
+          <li>Możliwość customizacji</li>
+        </ul>
+        <br>
+        <button class="btn btn-warning">Wybierz tematy</button>
+      </div>
     </div>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://yourmuse.io"><i class="fa fa-lg fa-genderless"></i> MUSE</a></li>
-    </ul>
+    <div class="row second-cont">
+      <div class="col-sm-4">
+        <div>
+          <table>
+            <tr>
+                <td><img height="90px" src="http://img3.wikia.nocookie.net/__cb20140430234257/total-drama-fanon-site/images/a/ad/Envelope-icon.png"></td>
+                <td><h3 style="padding-left: 10px">Zasubskrybuj na comiesięczny darmowy raport MUSE, w którym znajdziesz 5 kolejnych branż</h3></td>
+            </tr>
+          </table>
+
+              <div>
+                <input class="input-sm" type="text">
+                <button class="btn btn-success">Subscribe</button>
+              </div>
+        </div>
+      </div>
+      <div class="col-sm-4" style="border-left: 1px solid black">
+        <table>
+          <td><img style="width: 300px; height: 200px" src="http://www.janwillemtulp.com/wp-content/uploads/2011/03/Line-chart.png"></td>
+          <td><h3>Wszystkie branże i firmy na YouTube - zobacz na którym miejscu jesteś wśród konkurencji</h3></td>
+        </table>
+
+      </div>
+      <div class="col-sm-4" style="border-left: 1px solid black">
+        <table>
+          <td><img style="width: 300px; height: 200px" src="http://www.janwillemtulp.com/wp-content/uploads/2011/03/Line-chart.png"></td>
+          <td><h3>MUSE 2.0 - analityka YouTube dla marek, MCNs i twórców, która zwiększa ROI na video</h3></td>
+        </table>
+      </div>
+    </div>
+    
   </div>
-</nav>
-
-<div id="main">
-
-  <!-- angular templating -->
-  <!-- this is where content will be injected -->
-  <div ng-view></div>
-
+</div>
+<div class="footer">
+  <p>MUSE - <a href="http://yourmuse.io">yourmuse.io</a></p>
 </div>
 
-<footer class="text-center">
-</footer>
+<!-- Core JavaScript Files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/stellar.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script>
 
 </body>
 

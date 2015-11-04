@@ -7,19 +7,17 @@ scotchApp.config(function($routeProvider) {
 
     // route for the home page
       .when('/', {
-        templateUrl : 'pages/home.html',
+        templateUrl : 'pages/index.html',
         controller  : 'mainController'
       })
 
     // route for the contact page
-      .when('/contact', {
-        templateUrl : 'pages/raport.html',
-        controller  : 'contactController'
+      .when('/view1', {
+        templateUrl : 'pages/view1.html',
+        controller  : 'mainController'
       });
 });
 
 // create the controller and inject Angular's $scope
 scotchApp.controller('mainController', function($scope) {
-  // create a message to display in our view
-  $scope.message = 'Everyone come and see how good I look!';
 });
