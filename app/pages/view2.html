@@ -1,143 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Raport generator</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="/app/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/app/css/nivo-lightbox.css" rel="stylesheet" />
-    <link href="/app/css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-    <link href="/app/css/animate.css" rel="stylesheet" />
-    <!-- Squad theme CSS -->
-    <link href="/app/css/style.css" rel="stylesheet">
-    <link href="color/default.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-
-<div class="wrapper">
-    <div class="container-fluid">
-        <div class="row first-cont">
-            <div class="col-md-2">
-                <div class="logo">
-                    <a href="http://yourmuse.io"><img src="https://yourmuse.io/bundles/musewebapplanding/assets/images/muse_logo.png" width="270px" height="90px"></a>
+<div class="content">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row" >
+                <div class="col-md-4">
+                    <select>
+                        <option selected disabled>Tematy</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
                 </div>
-                <div class="list-group left-side-menu">
-                    <a href="#" class="list-group-item">Blog article</a>
-                    <a href="#" class="list-group-item">Blog article</a>
-                    <a href="#" class="list-group-item">Blog article</a>
+                <div class="col-md-8">
+                    <div id="subjects">Christmas, Cars, Private Universities</div>
                 </div>
 
             </div>
-            <div class="col-md-10" style="padding: 80px 0px 80px 30px; border: 1px solid black">
-                <div class="content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row" style="padding-left: 100px">
-                            <div class="col-md-3">
-                                <select>
-                                    <option value="0">Tematy</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <div id="date">Christmas, Cars, Private Universities</div>
-                            </div>
+            <br><br><br><br>
 
-                        </div>
-                <br><br>
-                    <div class="form form-horizontal" style="text-align: center">
-                        <div class="form-inline">
-                            <label>Imię:</label>
-                            <input class="form-control"  style="width: 100px" type="text">
-                        </div>
-                        <div class="form-inline">
-                            <label>Nazwisko:</label>
-                            <input class="form-control"  style="width: 100px" type="text">
-                        </div>
-                        <div class="form-inline">
-                            <label>Firma:</label>
-                            <input class="form-control"  style="width: 100px" type="text">
-                        </div>
-                        <div class="form-inline">
-                            <label>Email:</label>
-                            <input class="form-control"  style="width: 100px" type="text">
-                        </div>
+            <div id="customForm">
+                <div class="form form-horizontal">
+                    <div class="form-inline">
+                        <label>Imię:</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <br>
 
+                    <div class="form-inline">
+                        <label>Nazwisko:</label>
+                        <input class="form-control" type="text">
                     </div>
+                    <br>
+
+                    <div class="form-inline">
+                        <label>Firma:</label>
+                        <input class="form-control" type="text">
                     </div>
-                    <div class="col-md-6"><h3>Wybierz branżę o działalności na YouTube, której chcesz się dowiedzieć.
-                        Dostaniesz PDF z pełną analizą, wykresami i korzystnymi poradami od analityków MUSE</h3></div>
+                    <br>
+
+                    <div class="form-inline">
+                        <label>Email:</label>
+                        <input class="form-control" type="email">
+                    </div>
                 </div>
 
-                <br>
-                <button id="pay2" class="btn btn-warning">Zapłać</button>
-                </div>
+
             </div>
         </div>
-
-        <div class="row second-cont">
-            <div class="col-sm-4">
-                <div>
-                    <table>
-                        <tr>
-                            <td><img height="90px" src="http://img3.wikia.nocookie.net/__cb20140430234257/total-drama-fanon-site/images/a/ad/Envelope-icon.png"></td>
-                            <td><h3 style="padding-left: 10px">Zasubskrybuj na comiesięczny darmowy raport MUSE, w którym znajdziesz 5 kolejnych branż</h3></td>
-                        </tr>
-                    </table>
-
-                    <div>
-                        <input class="input-sm" type="text">
-                        <button class="btn btn-success">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4" style="border-left: 1px solid black">
-                <table>
-                    <td><img style="width: 300px; height: 200px" src="http://www.janwillemtulp.com/wp-content/uploads/2011/03/Line-chart.png"></td>
-                    <td><h3>Wszystkie branże i firmy na YouTube - zobacz na którym miejscu jesteś wśród konkurencji</h3></td>
-                </table>
-
-            </div>
-            <div class="col-sm-4" style="border-left: 1px solid black">
-                <table>
-                    <td><img style="width: 300px; height: 200px" src="http://www.janwillemtulp.com/wp-content/uploads/2011/03/Line-chart.png"></td>
-                    <td><h3>MUSE 2.0 - analityka YouTube dla marek, MCNs i twórców, która zwiększa ROI na video</h3></td>
-                </table>
-            </div>
+        <div class="col-md-6"><h2>Wybierz branżę o działalności na YouTube, której chcesz się
+            dowiedzieć.
+            Dostaniesz PDF z pełną analizą, wykresami i korzystnymi poradami od analityków MUSE</h2>
         </div>
-
     </div>
+
+    <br><br><br>
+    <button id="pay2" class="btn btn-warning">Zapłać</button>
 </div>
-<div class="footer">
-    <p>MUSE - <a href="http://yourmuse.io">yourmuse.io</a></p>
-</div>
 
-<!-- Core JavaScript Files -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/gnmenu.js"></script>
-<script src="js/jquery.scrollTo.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/stellar.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="js/custom.js"></script>
 
-</body>
 
-</html>
+
