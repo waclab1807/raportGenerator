@@ -1,14 +1,22 @@
 /**
  * Created by waclab1807 on 02.11.15.
  */
-//var page = require('webpage').create();
-////var url = 'http://www.google.com';
-//var tmpFunc = function(url){
-//    page.open(url, function(status) {
-//        console.log("Status: " + status);
-//        if(status === "success") {
-//            page.render('example.png');
-//        }
-//        phantom.exit();
-//    });
-//};
+
+function test(element) {
+    if (element.value != '') {
+        element.value = 'red';
+        return false;
+    } else {
+        element.className = '';
+        return true;
+    }
+}
+
+$(function() {
+    $('input[name="daterange"]').daterangepicker({
+        "startDate": "10/31/2015",
+        "endDate": "11/06/2015",
+        "opens": "center"
+    }, function(start, end, label) {
+    });
+});

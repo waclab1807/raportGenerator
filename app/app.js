@@ -15,7 +15,22 @@ app.config(function($routeProvider) {
         .when('/view2', {
             templateUrl : 'pages/view2.html'
         })
+
+        .when('/testpage', {
+            templateUrl : 'pages/testpage.html'
+        })
 });
 
 app.controller('mainController', function($scope) {
+    $scope.name;
+    $scope.lastname;
+    $scope.company;
+    $scope.email;
+
+    $('input[name="daterange"]').daterangepicker({
+        "startDate": "10/31/2015",
+        "endDate": "11/06/2015",
+        "opens": "center"
+    }, function(start, end, label) {
+    });
 });
