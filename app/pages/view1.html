@@ -173,7 +173,7 @@
             </table>
             <br><br>
 
-            <button ng-disabled="form.$invalid" type="submit" class="btn btn-warning">Zapłać</button>
+            <button ng-disabled="form.$invalid" ng-click="submit(form); go('/confirmPage')" type="submit" class="btn btn-warning">Zapłać</button>
         </div>
     </div>
 </div>

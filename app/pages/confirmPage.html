@@ -3,12 +3,12 @@
         <div class="col-md-6">
             <h2>Czy na pewno chcesz dokonać zakupu?</h2>
             <br><br><br>
-            <button type="submit" class="btn btn-warning">Zapłać</button>
+            <button type="submit" class="btn btn-warning" ng-click="showData()">Zapłać</button>
         </div>
         <div class="col-md-6">
             <h2>Wróć do poprzedniej strony</h2>
             <br><br><br>
-            <button type="submit" class="btn btn-warning" onclick="window.location.href='#view1'">Wróć</button>
+            <button type="submit" class="btn btn-warning" ng-click="go('/view1')">Wróć</button>
         </div>
     </div>
 </div>

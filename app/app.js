@@ -21,13 +21,26 @@ app.config(function($routeProvider) {
         })
 });
 
-app.controller('mainController', function($scope) {
+app.controller('mainController', ['$scope','$location',function($scope, $location) {
 
     $scope.data = {
-        name: "",
-        lastname: "",
-        company: "",
-        email: ""
+        name: "jan",
+        lastname: "kowalski",
+        company: "onebi",
+        email: "jan@kowalski.pl"
+    };
+
+    $scope.submit = function() {
+        formData = $scope.data;
+        console.log(formData);
+    };
+
+    $scope.showData = function() {
+        console.log(formData);
+    };
+
+    $scope.go = function(path) {
+        $location.path(path);
     };
 
     $('input[name="daterange"]').daterangepicker({
@@ -36,4 +49,4 @@ app.controller('mainController', function($scope) {
         "opens": "center"
     }, function(start, end, label) {
     });
-});
+}]);
