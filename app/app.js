@@ -16,16 +16,19 @@ app.config(function($routeProvider) {
             templateUrl : 'pages/view2.html'
         })
 
-        .when('/testpage', {
-            templateUrl : 'pages/testpage.html'
+        .when('/confirmPage', {
+            templateUrl : 'pages/confirmPage.html'
         })
 });
 
 app.controller('mainController', function($scope) {
-    $scope.name;
-    $scope.lastname;
-    $scope.company;
-    $scope.email;
+
+    $scope.data = {
+        name: "",
+        lastname: "",
+        company: "",
+        email: ""
+    };
 
     $('input[name="daterange"]').daterangepicker({
         "startDate": "10/31/2015",
